@@ -1,85 +1,66 @@
+<h1 align="center">🧟 Thriller VR Experience</h1>
+
+> An immersive virtual reality escape game inspired by the iconic "Thriller" aesthetic, built with A-Frame, Vue and Vite.
+
 <p align="center">
-    <img src="./logo.svg" alt="VAV Logo" align="center"/>
+  <img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js" />
+  <img src="https://img.shields.io/badge/A%E2%80%93Frame-brightgreen?style=for-the-badge&labelColor=%23ef2d5e&color=%23ef2d5e" alt="A-Frame" />
+  <img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" alt="Threejs" />
+  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 </p>
-<h1 align="center">Vue + A-Frame + Vite boilerplate</h1>
 
-> A boilerplate for A-Frame, Vue and Vite
+### # https://github.com/auzima/thriller-vr-experience
 
-![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-![A-Frame](https://img.shields.io/badge/A%E2%80%93Frame-brightgreen?style=for-the-badge&labelColor=%23ef2d5e&color=%23ef2d5e)
-![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+## Gameplay features
 
-### [>> DEMO <<](https://onivers.com/aframe-vue-boilerplate/)
+* **Zombie AI traqueur** : Un système de pathfinding où les zombies pourchassent le joueur.
+* **Système d'infection** : Interaction avec les ennemis modifiant l'état du joueur.
+* **Énigmes et objets cachés** : Récupération d'objets iconiques (veste rouge, bague de promesse) pour débloquer de nouvelles zones.
+* **Collisions personnalisées** : Murs invisibles et zones restreintes gérés par scripts (Cinéma, zones sécurisées).
 
-## Included in the boilerplate
+---
+
+## Included in the project
 
 ### Libs and components
-
-- [aframe-extras](https://github.com/c-frame/aframe-extras) (MIT License)
-- [aframe physx](https://github.com/c-frame/physx) (MIT License)
-- [aframe-blink-controls](https://github.com/jure/aframe-blink-controls) (MIT License)
-- [aframe-multi-camera](https://github.com/diarmidmackenzie/aframe-multi-camera/) (MIT License)
-- [simple-navmesh-constraint](https://github.com/AdaRoseCannon/aframe-xr-boilerplate) (MIT Licence)
+* [aframe-extras](https://github.com/c-frame/aframe-extras) (MIT License)
+* [aframe physx](https://github.com/c-frame/physx) (MIT License)
+* [aframe-blink-controls](https://github.com/jure/aframe-blink-controls) (MIT License)
+* Custom scripts : `zombie-chase.js`, `player-boundary.js`, `give-to-cashier.js`
 
 ### Movement modes support
+* **Desktop** – Keyboard for move (*WASD* or Arrows keys) + Mouse for look control (Drag and drop)
+* **Mobile** – 1x Finger touch to go forward + 2x Fingers touch to go backward + Gaze cursor for click
+* **VR/AR** – Walk + Teleport (Grip for grab and laser for click) + Gaze cursor for click in AR
 
-- **Desktop** – Keyboard for move (_WASD_ or Arrows keys) + Mouse for look control (Drag and drop)
-- **Mobile** – 1x Finger touch to go forward + 2x Fingers touch to go backward + Gaze cursor for click
-- **VR/AR** – walk + Teleport (Grip for grab and laser for click) + Gaze cursor for click in AR
-
-### 3D models
-
-- **Main room** – [VR Gallery](https://sketchfab.com/3d-models/vr-gallery-1ac32ed62fdf424498acc146fad31f7e) by [Maxim Mavrichev](https://sketchfab.com/mvrc.art) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-- **3D physic room** – [3d_gallery_for_vr_projects](https://sketchfab.com/3d-models/3d-gallery-for-vr-projects-68f77ed8558c4bd59e0a13e2cc9d1fd1) by [tekuto1s](https://sketchfab.com/tekuto1s) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-
----
-
-## Quickstart
-
-### Create a folder for your project and move to it
-
-### Clone (or fork, or download)
-
-```sh
-git clone https://github.com/Chabloz/a-frame-vite-vue-boilerplate.git .
-```
-
-### Install dependencies
-
-```sh
-npm ci
-```
-
-### Dev
-
-```sh
-npm run dev
-```
-
-### Build
-
-```sh
-npm run build
-```
-
-## Notes for local dev on VR headset
-
-1. Check that your development device and your VR headset are connected on **the same network**.
-
-2. Expose you local development:
-
-```sh
-npm run dev-expose
-```
-
-3. In your VR headset, browse to the local development adress `[ip]:[port]`.
-
-> [!NOTE]
-> The certificate is self-signed, so you will probably have to confirm access to the resource in your browser.
+### 3D Models & assets
+* **Zombies Animations** – [Mixamo Thriller Pack](https://www.mixamo.com/) is licensed under Mixamo Standard License.
+* **Thriller's Cinema Palace** – [Model](https://sketchfab.com/3d-models/thrillers-cinema-palace-5ed7659b2eb34c0685f48814f9a73e43) by Sketchfab Community is licensed under CC BY 4.0.
+* **Dark Forest** – [Model](https://sketchfab.com/3d-models/forest-9153c2b370934758bf14c395abe36b27) by Sketchfab Community is licensed under CC BY 4.0.
+* **Michael Jackson's Jacket** – [Model](https://sketchfab.com/3d-models/michael--jackson-thriller-1b7a80272bb0428e95af5a9470178aeb) by Sketchfab Community is licensed under CC BY 4.0 *(Modified in Blender)*.
+* **Golden Ring** – [Model](https://sketchfab.com/3d-models/golden-ring-67ccb642dc7847dd9a7e45c69046946e) by Sketchfab Community is licensed under CC BY 4.0.
+* **Night Sky** – [The Moon](https://sketchfab.com/3d-models/the-moon-9916fcec59f04b07b3e8d7f077dc3ded) and [Stars](https://sketchfab.com/3d-models/extracted-minecraft-java-editions-stars-c8868b7ffc4a473eb5cd9203a59e3650) are licensed under CC BY 4.0.
 
 ---
 
-## License
+## 🚀 Quickstart
 
-![MIT License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge&color=%23262626)
+### Clone the repository
+```sh
+git clone [https://github.com/auzima/thriller-vr-experience.git](https://github.com/auzima/thriller-vr-experience.git)
+cd thriller-vr-experience
+`npm ci`
+`npm run dev`
+`npm run build`
+
+
+## Authors
+
+- **Developer**: Auzima
+- **Project**: Thriller VR Experience
+
+## Acknowledgments
+
+- Adobe Mixamo for character animations
+- Sketchfab community for amazing 3D models
+- The open-source VR development community

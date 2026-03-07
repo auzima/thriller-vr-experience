@@ -1,0 +1,11 @@
+Model Information:
+* title:	THRILLER'S_CINEMA_PALACE
+* source:	https://sketchfab.com/3d-models/thrillers-cinema-palace-5ed7659b2eb34c0685f48814f9a73e43
+* author:	sherif shawky (https://sketchfab.com/shawky.sherif1)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "THRILLER'S_CINEMA_PALACE" (https://sketchfab.com/3d-models/thrillers-cinema-palace-5ed7659b2eb34c0685f48814f9a73e43) by sherif shawky (https://sketchfab.com/shawky.sherif1) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

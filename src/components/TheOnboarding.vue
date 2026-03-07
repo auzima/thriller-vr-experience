@@ -1,19 +1,21 @@
 <script setup>
-  import { ref } from 'vue';
+  import { ref, watch } from 'vue';
 
-  defineProps({
+  const props = defineProps({
     loaded: Boolean,
   });
 
   const showOnboarding = ref(true);
 
-  function enterScene() {
-    showOnboarding.value = false;
-    if (AFRAME.utils.device.checkHeadsetConnected() && !AFRAME.utils.device.isMobile()) {
-      document.querySelector('a-scene').enterVR();
-    }
-    document.querySelector('a-scene').emit('enter-scene');
-  }
+  watch(
+    () => props.loaded,
+    (isLoaded) => {
+      if (isLoaded) {
+        showOnboarding.value = false;
+      }
+    },
+    { immediate: true },
+  );
 </script>
 
 <template>
@@ -21,7 +23,7 @@
     <div>
       <h1>A-Frame + Vite + Vue Boilerplate</h1>
       <p v-if="!loaded">loading...</p>
-      <button v-if="loaded" @click="enterScene()">Enter scene</button>
+      <p v-if="loaded">Initialisation...</p>
       <div class="licences">
         <section>
           <h4>Movement modes support</h4>
