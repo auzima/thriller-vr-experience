@@ -52,3 +52,5 @@ cd thriller-vr-experience
 `npm ci`
 `npm run dev`
 `npm run build`
+`npm run dev`
+`npm run dev-expose`
