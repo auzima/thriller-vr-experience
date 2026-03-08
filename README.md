@@ -9,48 +9,69 @@
   <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 </p>
 
-### https://github.com/auzima/thriller-vr-experience
+### Repository
+
+https://github.com/auzima/thriller-vr-experience
 
 ## Gameplay features
 
-* **Zombie AI traqueur** : Un système de pathfinding où les zombies pourchassent le joueur.
-* **Système d'infection** : Interaction avec les ennemis modifiant l'état du joueur.
-* **Énigmes et objets cachés** : Récupération d'objets iconiques (veste rouge, bague de promesse) pour débloquer de nouvelles zones.
-* **Collisions personnalisées** : Murs invisibles et zones restreintes gérés par scripts (Cinéma, zones sécurisées).
+- **Zombie AI traqueur** : Un système de pathfinding où les zombies pourchassent le joueur.
+- **Système d'infection** : Interaction avec les ennemis modifiant l'état du joueur.
+- **Énigmes et objets cachés** : Récupération d'objets iconiques (veste rouge, bague de promesse) pour débloquer de nouvelles zones.
+- **Collisions personnalisées** : Murs invisibles et zones restreintes gérés par scripts (cinéma, zones sécurisées).
 
 ---
 
 ## Included in the project
 
 ### Libs and components
-* [aframe-extras](https://github.com/c-frame/aframe-extras) (MIT License)
-* [aframe physx](https://github.com/c-frame/physx) (MIT License)
-* [aframe-blink-controls](https://github.com/jure/aframe-blink-controls) (MIT License)
-* Custom scripts : `zombie-chase.js`, `player-boundary.js`, `give-to-cashier.js`
+
+- [aframe-extras](https://github.com/c-frame/aframe-extras) (MIT License)
+- [aframe physx](https://github.com/c-frame/physx) (MIT License)
+- [aframe-blink-controls](https://github.com/jure/aframe-blink-controls) (MIT License)
+- Custom scripts : `zombie-chase.js`, `player-boundary.js`, `give-to-cashier.js`
 
 ### Movement modes support
-* **Desktop** – Keyboard for move (*WASD* or Arrows keys) + Mouse for look control (Drag and drop)
-* **Mobile** – 1x Finger touch to go forward + 2x Fingers touch to go backward + Gaze cursor for click
-* **VR/AR** – Walk + Teleport (Grip for grab and laser for click) + Gaze cursor for click in AR
+
+- **Desktop** - Keyboard for movement (*WASD* or arrow keys) + mouse for look control (drag and drop)
+- **Mobile** - 1x finger touch to go forward + 2x fingers touch to go backward + gaze cursor for click
+- **VR/AR** - Walk + teleport (grip for grab and laser for click) + gaze cursor for click in AR
 
 ### 3D Models & assets
-* **Zombies Animations** – [Mixamo Thriller Pack](https://www.mixamo.com/) is licensed under Mixamo Standard License.
-* **Thriller's Cinema Palace** – [Model](https://sketchfab.com/3d-models/thrillers-cinema-palace-5ed7659b2eb34c0685f48814f9a73e43) by Sketchfab Community is licensed under CC BY 4.0.
-* **Dark Forest** – [Model](https://sketchfab.com/3d-models/forest-9153c2b370934758bf14c395abe36b27) by Sketchfab Community is licensed under CC BY 4.0.
-* **Michael Jackson's Jacket** – [Model](https://sketchfab.com/3d-models/michael--jackson-thriller-1b7a80272bb0428e95af5a9470178aeb) by Sketchfab Community is licensed under CC BY 4.0 *(Modified in Blender)*.
-* **Golden Ring** – [Model](https://sketchfab.com/3d-models/golden-ring-67ccb642dc7847dd9a7e45c69046946e) by Sketchfab Community is licensed under CC BY 4.0.
-* **Night Sky** – [The Moon](https://sketchfab.com/3d-models/the-moon-9916fcec59f04b07b3e8d7f077dc3ded) and [Stars](https://sketchfab.com/3d-models/extracted-minecraft-java-editions-stars-c8868b7ffc4a473eb5cd9203a59e3650) are licensed under CC BY 4.0.
+
+- **Zombies Animations** - [Mixamo Thriller Pack](https://www.mixamo.com/) is licensed under Mixamo Standard License.
+- **Thriller's Cinema Palace** - [Model](https://sketchfab.com/3d-models/thrillers-cinema-palace-5ed7659b2eb34c0685f48814f9a73e43) by Sketchfab Community is licensed under CC BY 4.0.
+- **Dark Forest** - [Model](https://sketchfab.com/3d-models/forest-9153c2b370934758bf14c395abe36b27) by Sketchfab Community is licensed under CC BY 4.0.
+- **Michael Jackson's Jacket** - [Model](https://sketchfab.com/3d-models/michael--jackson-thriller-1b7a80272bb0428e95af5a9470178aeb) by Sketchfab Community is licensed under CC BY 4.0 *(modified in Blender)*.
+- **Golden Ring** - [Model](https://sketchfab.com/3d-models/golden-ring-67ccb642dc7847dd9a7e45c69046946e) by Sketchfab Community is licensed under CC BY 4.0.
+- **Night Sky** - [The Moon](https://sketchfab.com/3d-models/the-moon-9916fcec59f04b07b3e8d7f077dc3ded) and [Stars](https://sketchfab.com/3d-models/extracted-minecraft-java-editions-stars-c8868b7ffc4a473eb5cd9203a59e3650) are licensed under CC BY 4.0.
 
 ---
 
 ## Quickstart
 
-### Clone the repository
+### Clone and install
+
 ```sh
-git clone [https://github.com/auzima/thriller-vr-experience.git](https://github.com/auzima/thriller-vr-experience.git)
+git clone https://github.com/auzima/thriller-vr-experience.git
 cd thriller-vr-experience
-`npm ci`
-`npm run dev`
-`npm run build`
-`npm run dev`
-`npm run dev-expose`
+npm ci
+```
+
+### Run locally
+
+```sh
+npm run dev
+```
+
+### Expose on local network (VR headset)
+
+```sh
+npm run dev-expose
+```
+
+### Build for production
+
+```sh
+npm run build
+```
