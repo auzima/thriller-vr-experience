@@ -11,7 +11,7 @@ const fullReloadPlugin = {
 
 export default defineConfig(({ command, mode }) => {
   const config = {
-    base: "/b/",
+    base: "/aurelia/",
     plugins: [
       basicSsl(),
       vue({
