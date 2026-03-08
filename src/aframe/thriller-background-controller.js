@@ -44,20 +44,42 @@ AFRAME.registerComponent("thriller-background-controller", {
     };
 
     this.onUserGesture = () => {
-      if (!this.pendingByGesture || this.started) return;
+      if (this.started) return;
+      if (!this.pendingByGesture) return;
       this.playThriller();
     };
 
-    globalThis.addEventListener("first-zombie-scream", this.onFirstZombieScream);
+    this.onSceneLoaded = () => {
+      this.playThriller();
+    };
+
+    this.onEnterVr = () => {
+      this.playThriller();
+    };
+
+    globalThis.addEventListener(
+      "first-zombie-scream",
+      this.onFirstZombieScream,
+    );
     globalThis.addEventListener("pointerdown", this.onUserGesture);
     globalThis.addEventListener("touchstart", this.onUserGesture);
     globalThis.addEventListener("keydown", this.onUserGesture);
+    this.el.addEventListener("loaded", this.onSceneLoaded);
+    this.el.addEventListener("enter-vr", this.onEnterVr);
+
+    // Try once immediately when the component starts.
+    setTimeout(() => this.playThriller(), 0);
   },
 
   remove: function () {
-    globalThis.removeEventListener("first-zombie-scream", this.onFirstZombieScream);
+    globalThis.removeEventListener(
+      "first-zombie-scream",
+      this.onFirstZombieScream,
+    );
     globalThis.removeEventListener("pointerdown", this.onUserGesture);
     globalThis.removeEventListener("touchstart", this.onUserGesture);
     globalThis.removeEventListener("keydown", this.onUserGesture);
+    this.el.removeEventListener("loaded", this.onSceneLoaded);
+    this.el.removeEventListener("enter-vr", this.onEnterVr);
   },
 });

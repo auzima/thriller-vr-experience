@@ -132,7 +132,7 @@ const allAssetsLoaded = ref(false);
       </a-entity>
 
       <!-- Veste cachee dans la foret : le joueur doit la recuperer pour entrer -->
-      <a-entity id="jacket" gltf-model="#jacket-model" position="-18 -0.8 40" scale="2.5 2.5 2.5" rotation="-90 55 180"
+      <a-entity id="jacket" gltf-model="#jacket-model" position="-18 -1.15 40" scale="2.5 2.5 2.5" rotation="-90 55 180"
         jacket-pickup="radius: 0.12">
       </a-entity>
 
