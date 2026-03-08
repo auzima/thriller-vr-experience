@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 </p>
 
-### # https://github.com/auzima/thriller-vr-experience
+### https://github.com/auzima/thriller-vr-experience
 
 ## Gameplay features
 
@@ -52,15 +52,3 @@ cd thriller-vr-experience
 `npm ci`
 `npm run dev`
 `npm run build`
-
-
-## Authors
-
-- **Developer**: Auzima
-- **Project**: Thriller VR Experience
-
-## Acknowledgments
-
-- Adobe Mixamo for character animations
-- Sketchfab community for amazing 3D models
-- The open-source VR development community
