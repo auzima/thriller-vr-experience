@@ -1,21 +1,66 @@
-# 🧟‍♂️ Thriller VR Experience
+<h1 align="center">🧟 Thriller VR Experience</h1>
 
-Un mini-jeu en Réalité Virtuelle basé sur l'univers du célèbre clip *Thriller* de Michael Jackson. Développé avec **A-Frame**, **Vue.js** et **Vite**.
+> An immersive virtual reality escape game inspired by the iconic "Thriller" aesthetic, built with A-Frame, Vue and Vite.
 
-## 🎮 Gameplay
-- **Immersion WebXR** : Jouable directement dans le navigateur avec un casque VR (Meta Quest, etc.).
-- **Zombie Traqueur AI** : Un zombie intelligent sort du sol et poursuit le joueur.
-- **Système d'Infection** : Si le zombie touche le joueur, les mains VR de ce dernier se transforment en mains de zombie !
-- **Gestion des Collisions** : Un système de "murs invisibles" empêche le joueur et les ennemis de traverser les décors (Cinéma).
+<p align="center">
+  <img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js" />
+  <img src="https://img.shields.io/badge/A%E2%80%93Frame-brightgreen?style=for-the-badge&labelColor=%23ef2d5e&color=%23ef2d5e" alt="A-Frame" />
+  <img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" alt="Threejs" />
+  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+</p>
 
-## 🛠️ Technologies Utilisées
-- [A-Frame](https://aframe.io/) (Framework WebVR)
-- [Vue.js 3](https://vuejs.org/) & [Vite](https://vitejs.dev/)
-- Modèles 3D animés (glTF/glb) via Mixamo et Blender
-- Scripts de composants A-Frame personnalisés en JavaScript
+### # https://github.com/auzima/thriller-vr-experience
 
-## 🚀 Comment lancer le projet en local
-1. Cloner le repo : `git clone https://github.com/TON-PSEUDO/TON-REPO.git`
-2. Installer les dépendances : `npm install`
-3. Lancer le serveur local : `npm run dev`
-4. Ouvrir l'adresse locale (ex: `localhost:5173`) dans un navigateur compatible WebXR.
+## Gameplay features
+
+* **Zombie AI traqueur** : Un système de pathfinding où les zombies pourchassent le joueur.
+* **Système d'infection** : Interaction avec les ennemis modifiant l'état du joueur.
+* **Énigmes et objets cachés** : Récupération d'objets iconiques (veste rouge, bague de promesse) pour débloquer de nouvelles zones.
+* **Collisions personnalisées** : Murs invisibles et zones restreintes gérés par scripts (Cinéma, zones sécurisées).
+
+---
+
+## Included in the project
+
+### Libs and components
+* [aframe-extras](https://github.com/c-frame/aframe-extras) (MIT License)
+* [aframe physx](https://github.com/c-frame/physx) (MIT License)
+* [aframe-blink-controls](https://github.com/jure/aframe-blink-controls) (MIT License)
+* Custom scripts : `zombie-chase.js`, `player-boundary.js`, `give-to-cashier.js`
+
+### Movement modes support
+* **Desktop** – Keyboard for move (*WASD* or Arrows keys) + Mouse for look control (Drag and drop)
+* **Mobile** – 1x Finger touch to go forward + 2x Fingers touch to go backward + Gaze cursor for click
+* **VR/AR** – Walk + Teleport (Grip for grab and laser for click) + Gaze cursor for click in AR
+
+### 3D Models & assets
+* **Zombies Animations** – [Mixamo Thriller Pack](https://www.mixamo.com/) is licensed under Mixamo Standard License.
+* **Thriller's Cinema Palace** – [Model](https://sketchfab.com/3d-models/thrillers-cinema-palace-5ed7659b2eb34c0685f48814f9a73e43) by Sketchfab Community is licensed under CC BY 4.0.
+* **Dark Forest** – [Model](https://sketchfab.com/3d-models/forest-9153c2b370934758bf14c395abe36b27) by Sketchfab Community is licensed under CC BY 4.0.
+* **Michael Jackson's Jacket** – [Model](https://sketchfab.com/3d-models/michael--jackson-thriller-1b7a80272bb0428e95af5a9470178aeb) by Sketchfab Community is licensed under CC BY 4.0 *(Modified in Blender)*.
+* **Golden Ring** – [Model](https://sketchfab.com/3d-models/golden-ring-67ccb642dc7847dd9a7e45c69046946e) by Sketchfab Community is licensed under CC BY 4.0.
+* **Night Sky** – [The Moon](https://sketchfab.com/3d-models/the-moon-9916fcec59f04b07b3e8d7f077dc3ded) and [Stars](https://sketchfab.com/3d-models/extracted-minecraft-java-editions-stars-c8868b7ffc4a473eb5cd9203a59e3650) are licensed under CC BY 4.0.
+
+---
+
+## Quickstart
+
+### Clone the repository
+```sh
+git clone [https://github.com/auzima/thriller-vr-experience.git](https://github.com/auzima/thriller-vr-experience.git)
+cd thriller-vr-experience
+`npm ci`
+`npm run dev`
+`npm run build`
+
+
+## Authors
+
+- **Developer**: Auzima
+- **Project**: Thriller VR Experience
+
+## Acknowledgments
+
+- Adobe Mixamo for character animations
+- Sketchfab community for amazing 3D models
+- The open-source VR development community
