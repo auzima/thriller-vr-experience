@@ -43,7 +43,7 @@
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### Clone the repository
 ```sh
